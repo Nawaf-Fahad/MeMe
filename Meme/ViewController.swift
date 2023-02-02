@@ -34,11 +34,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     override func viewWillAppear(_ animated: Bool) {
         subscribeToKeyboardNotifications()
         Camera.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
-//                if imagePickerView.image == nil
-//                {share.isEnabled = false}
-//                else{
-//                    share.isEnabled = true
-//                }
+                if imagePickerView.image == nil
+                {share.isEnabled = false}
+                else{
+                    share.isEnabled = true
+                }
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
