@@ -110,9 +110,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @objc func keyboardWillShow(_ notification: NSNotification) {
-        if bottomTextField.isFirstResponder{
-            view.frame.origin.y -= getKeyboardHeight(notification: notification)
-        }
+        view.frame.origin.y -= getKeyboardHeight(notification: notification)
+        
         
     }
     
@@ -125,22 +124,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     
     
     
-    
-    
-    @IBAction func pickAnImage(_ sender: Any) {
+    func ImagePickerSourceType(sourceType: UIImagePickerController.SourceType) {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
-        self.present(imagePicker, animated: true, completion:nil)
+        present(imagePicker, animated: true, completion: nil)
+        }
+    
+    @IBAction func pickAnImage(_ sender: Any) {
+        ImagePickerSourceType(sourceType: .photoLibrary)
     }
     
     
     
     @IBAction func pickAnImageFromCamera(_ sender: UIBarButtonItem) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        self.present(imagePicker, animated: true, completion:nil)
+        ImagePickerSourceType(sourceType: .camera)
     }
     
     
