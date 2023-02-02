@@ -26,7 +26,6 @@
 		E7FEAD60298AE8800085AC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7FEAD62298AE8800085AC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7FEAD68298B202D0085AC51 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
-		E7FEAD6D298B53B10085AC51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +155,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E7FEAD5B298AE8790085AC51 /* Base */,
-				E7FEAD6D298B53B10085AC51 /* en */,
 			);
 			name = Main.storyboard;
 			path = /Users/nxwaf/Documents/SwiftUi/NanoDegree/Meme/Meme;
