@@ -167,7 +167,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     
     
     
-    @IBAction func activityVC(_ sender: UIBarButtonItem) {
+    @IBAction func activityVC(_ sender: Any) {
         let memedImage = generateMemedImage()
         
         let shareActivityViewController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
@@ -190,7 +190,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     
     
     
-    @IBAction func Cancel(_ sender: UIBarButtonItem) {
+    @IBAction func Cancel(_ sender: Any) {
         topTextField.text = ""
         bottomTextField.text = ""
         imagePickerView.image = nil
