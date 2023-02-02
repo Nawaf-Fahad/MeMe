@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "MemeMe-1.0"; ObjectID = "SFH-0g-54m"; */
+"SFH-0g-54m.title" = "MemeMe-1.0";
+
+/* Class = "UIBarButtonItem"; title = "Album"; ObjectID = "afv-ic-E96"; */
+"afv-ic-E96.title" = "Album";
+
+/* Class = "UITextField"; text = "TOP"; ObjectID = "zBI-8v-0XO"; */
+"zBI-8v-0XO.text" = "TOP";
+
+/* Class = "UITextField"; text = "BOTTOM"; ObjectID = "zHf-lF-w8V"; */
+"zHf-lF-w8V.text" = "BOTTOM";

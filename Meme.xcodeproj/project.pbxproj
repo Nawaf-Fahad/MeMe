@@ -13,17 +13,20 @@
 		E7FEAD5C298AE8790085AC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FEAD5A298AE8790085AC51 /* Main.storyboard */; };
 		E7FEAD5E298AE8800085AC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FEAD5D298AE8800085AC51 /* Assets.xcassets */; };
 		E7FEAD61298AE8800085AC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FEAD5F298AE8800085AC51 /* LaunchScreen.storyboard */; };
+		E7FEAD69298B202D0085AC51 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FEAD68298B202D0085AC51 /* Meme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7FEAD51298AE8790085AC51 /* Meme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FEAD54298AE8790085AC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FEAD56298AE8790085AC51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E7FEAD58298AE8790085AC51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7FEAD58298AE8790085AC51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		E7FEAD5B298AE8790085AC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7FEAD5D298AE8800085AC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7FEAD60298AE8800085AC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7FEAD62298AE8800085AC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FEAD68298B202D0085AC51 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		E7FEAD6D298B53B10085AC51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 				E7FEAD54298AE8790085AC51 /* AppDelegate.swift */,
 				E7FEAD56298AE8790085AC51 /* SceneDelegate.swift */,
 				E7FEAD58298AE8790085AC51 /* ViewController.swift */,
+				E7FEAD68298B202D0085AC51 /* Meme.swift */,
 				E7FEAD5A298AE8790085AC51 /* Main.storyboard */,
 				E7FEAD5D298AE8800085AC51 /* Assets.xcassets */,
 				E7FEAD5F298AE8800085AC51 /* LaunchScreen.storyboard */,
@@ -139,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7FEAD59298AE8790085AC51 /* ViewController.swift in Sources */,
+				E7FEAD69298B202D0085AC51 /* Meme.swift in Sources */,
 				E7FEAD55298AE8790085AC51 /* AppDelegate.swift in Sources */,
 				E7FEAD57298AE8790085AC51 /* SceneDelegate.swift in Sources */,
 			);
@@ -151,9 +156,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				E7FEAD5B298AE8790085AC51 /* Base */,
+				E7FEAD6D298B53B10085AC51 /* en */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = /Users/nxwaf/Documents/SwiftUi/NanoDegree/Meme/Meme;
+			sourceTree = "<absolute>";
 		};
 		E7FEAD5F298AE8800085AC51 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -290,6 +297,7 @@
 				DEVELOPMENT_TEAM = XUNA66GYSC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Meme/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +326,7 @@
 				DEVELOPMENT_TEAM = XUNA66GYSC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Meme/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
