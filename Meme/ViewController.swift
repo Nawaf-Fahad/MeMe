@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         NSAttributedString.Key.strokeColor : UIColor.black,
         NSAttributedString.Key.foregroundColor : UIColor.white,
         NSAttributedString.Key.font: UIFont(name: "impact", size: 40)!,
-        NSAttributedString.Key.strokeWidth : -1.0
+        NSAttributedString.Key.strokeWidth : -3.5
     ]
     
     @IBOutlet weak var imagePickerView: UIImageView!
@@ -39,7 +39,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         else{
             share.isEnabled = true
         }
-     
+        
+        #if targetEnvironment(simulator)
+            Camera.isEnabled = false;
+        #else
+            Camera.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera);
+        #endif
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -114,7 +120,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         
         if bottomTextField.isFirstResponder{
             view.frame.origin.y -= getKeyboardHeight(notification: notification)
-
+            
         }
     }
     
@@ -158,9 +164,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
             
             dismiss(animated: true, completion: nil)            }
     }
-    //    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-    //
-    //    }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
