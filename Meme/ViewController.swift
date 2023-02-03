@@ -39,6 +39,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         else{
             share.isEnabled = true
         }
+     
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -110,9 +111,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @objc func keyboardWillShow(_ notification: NSNotification) {
-        view.frame.origin.y -= getKeyboardHeight(notification: notification)
         
-        
+        if bottomTextField.isFirstResponder{
+            view.frame.origin.y -= getKeyboardHeight(notification: notification)
+
+        }
     }
     
     
@@ -127,8 +130,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     func ImagePickerSourceType(sourceType: UIImagePickerController.SourceType) {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        imagePicker.sourceType = sourceType
         present(imagePicker, animated: true, completion: nil)
-        }
+    }
     
     @IBAction func pickAnImage(_ sender: Any) {
         ImagePickerSourceType(sourceType: .photoLibrary)
