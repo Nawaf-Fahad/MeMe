@@ -32,6 +32,7 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell", for: indexPath) as! MemeTableViewCell
         let meme = memes[indexPath.row]
         cell.memeImg.image = meme.memedImage
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         return cell
     }
     

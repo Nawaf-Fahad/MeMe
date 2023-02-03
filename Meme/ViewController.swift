@@ -15,6 +15,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         NSAttributedString.Key.font: UIFont(name: "impact", size: 40)!,
         NSAttributedString.Key.strokeWidth : -3.5
     ]
+    var memeSentFromDetail: Meme?
+
     
     @IBOutlet weak var imagePickerView: UIImageView!
     @IBOutlet weak var topTextField: UITextField!
@@ -38,6 +40,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         {share.isEnabled = false}
         else{
             share.isEnabled = true
+        }
+        
+        if let memeFromDetail = memeSentFromDetail as Meme? {
+            imagePickerView.image = memeFromDetail.image
         }
         
         #if targetEnvironment(simulator)

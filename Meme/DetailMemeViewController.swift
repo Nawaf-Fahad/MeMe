@@ -20,6 +20,9 @@ class DetailMemeViewController: UIViewController {
     
 
     @IBAction func editButton(_ sender: Any) {
+        let VC = storyboard!.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        VC.memeSentFromDetail = self.meme
+        self.navigationController?.pushViewController(VC, animated: true)
     }
     
 }
